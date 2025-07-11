@@ -1,13 +1,14 @@
 import logo from "./assets/react.svg";
 
-function Header() {
+
+function Header({ onHome }) {
   return (
     <>
       <header>
         <img src={logo} alt="Logo" />
 
         <div className="botoes">
-          <button className="headerButton">Home</button>
+          <button className="headerButton" onClick={onHome}>Home</button>
           <button className="headerButton">Sobre</button>
           <button className="headerButton">Serviços</button>
           <button className="headerButton">Contato</button>

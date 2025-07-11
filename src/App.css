@@ -55,10 +55,12 @@ header {
   transition: all 0.3s ease;
   font-family: sans-serif;
   font-weight: bold;
+   flex-direction: column;
+  text-align: center;
 }
 
 .box:nth-child(2) {
-  background-color: blue;
+  background-color: rgb(0, 255, 26);
 }
 .box.center {
   width: 250px;
@@ -71,6 +73,12 @@ header {
   height: 160px;
   font-size: 20px;
   opacity: 0.7;
+}
+.box-img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .nav-button {
